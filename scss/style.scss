@@ -1,0 +1,52 @@
+$font-stack: Arial, Helvetica, sans-serif;
+$light-color: #f4f4f4;
+$highlight-color: rgb(141, 10, 10);
+$button-color: rgb(243, 204, 204);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $font-stack;
+    background-color: $light-color;
+    font-size: 16px;
+    
+    h1 {
+        color: $highlight-color;
+        margin: 20px;
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        margin: 20px;
+    }
+
+    ol {
+        margin: 10px;
+    }
+
+    .choices {
+        display: flex;
+        margin: 20px;
+
+        button {
+            color: $highlight-color;
+            padding: 10px;
+            font-size: 2rem;
+            margin: 0 20px;
+            background-color: $button-color;
+            border: 1px solid $highlight-color;
+        }
+    }
+
+    .points {
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+}
