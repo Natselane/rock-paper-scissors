@@ -55,4 +55,30 @@ body .points {
   font-weight: bold;
   font-size: 1.4rem;
 }
+
+.battlefield {
+  width: 800px;
+  height: 290px;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.battlefield img {
+  height: 100%;
+}
+
+.battlefield .playerField {
+  width: 380px;
+  background: red;
+}
+
+.battlefield .computerField {
+  width: 380px;
+  background: blue;
+}
 /*# sourceMappingURL=style.css.map */

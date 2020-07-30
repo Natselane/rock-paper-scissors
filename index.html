@@ -17,13 +17,22 @@
     </ol>
     <p>Good luck!</p>
     <div class="choices">
-        <button id="rock">Rock</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
+        <button id="rock">rock</button>
+        <button id="paper">paper</button>
+        <button id="scissors">scissors</button>
     </div>
-    <div class="playerPoints">Your points: <span>0</span></div>
+    <div>
+        <button id="reset">reset</button>
+    </div>
+    <div class="battlefield">
+        <div class="playerField"> <img src="" alt=""></div>
+        <div class="computerField"><img src="" alt=""></div>
+    </div>
+    <p id="round"></p>
+    <p id="notice"></p>
+    <div>Your points: <span id="playerPoints">0</span></div>
     
-    <div class="compPoints">Computer points: <span>0</span></div>
+    <div>Computer points: <span id="compPoints">0</span></div>
 
     <script src="app.js"></script>
 </body>

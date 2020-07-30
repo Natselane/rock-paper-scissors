@@ -50,3 +50,26 @@ body {
         font-size: 1.4rem;
     }
 }
+
+
+.battlefield {
+    width: 800px;
+    height: 290px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        height: 100%;
+    }
+
+    .playerField {
+        width: 380px;
+        background: red;
+    }
+
+    .computerField {
+        width: 380px;
+        background: blue;
+    }
+}
