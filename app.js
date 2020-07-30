@@ -79,7 +79,7 @@ function playRound(playerChoice) {
     console.log({computerSelection, playerSelection});
  
     roundCount++;
-    round.innerText = `Round: ${roundCount}`; 
+    round.innerText = roundCount; 
     console.log({roundCount});
     // A draw
     if (computerSelection == playerSelection) {
@@ -107,7 +107,7 @@ function playRound(playerChoice) {
 // Loop through buttons, when it's clicked execute the code
 buttons.forEach(button => {
     button.addEventListener("click", () => {
-        const playerChoice = button.innerText;
+        const playerChoice = button.innerText.toLowerCase();
         const winner = playRound(playerChoice);
         console.log({winner});
         addPoints(winner);

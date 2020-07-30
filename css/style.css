@@ -6,6 +6,10 @@
 }
 
 body {
+  background-color: white;
+}
+
+body .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,48 +20,71 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
+  font-family: "Roboto", sans-serif;
+  background-color: #FFF0E5;
   font-size: 16px;
+  width: 80%;
+  margin: auto;
+  height: 100vh;
 }
 
-body h1 {
-  color: #8d0a0a;
+body .container h1 {
+  color: #55443a;
   margin: 20px;
   font-size: 2.5rem;
 }
 
-body h2 {
+body .container h2 {
   margin: 20px;
 }
 
-body ol {
+body .container ol {
   margin: 10px;
 }
 
-body .choices {
+body .container .choices {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 20px;
 }
 
-body .choices button {
-  color: #8d0a0a;
-  padding: 10px;
+body .container .choices button {
+  color: #55443a;
+  padding: 10px 15px;
   font-size: 2rem;
   margin: 0 20px;
   background-color: #f3cccc;
-  border: 1px solid #8d0a0a;
+  border: 1px solid #55443a;
+  border-radius: 30px;
+  text-transform: uppercase;
 }
 
-body .points {
+body .container .choices #rock {
+  background: #9E1A1A;
+  color: #FFF0E5;
+  border: 1px solid #9E1A1A;
+}
+
+body .container .choices #paper {
+  background: #032c56;
+  color: #FFF0E5;
+  border: 1px solid #032c56;
+}
+
+body .container .choices #scissors {
+  background: #1d451e;
+  color: #FFF0E5;
+  border: 1px solid #1d451e;
+}
+
+body .container .points {
   font-weight: bold;
   font-size: 1.4rem;
 }
 
 .battlefield {
-  width: 800px;
+  width: 90%;
   height: 290px;
   border: 1px solid black;
   display: -webkit-box;
@@ -70,6 +97,7 @@ body .points {
 
 .battlefield img {
   height: 100%;
+  width: 100%;
 }
 
 .battlefield .playerField {
@@ -80,5 +108,35 @@ body .points {
 .battlefield .computerField {
   width: 380px;
   background: blue;
+}
+
+.battlefield .gamePlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.battlefield .gamePlay #notice {
+  margin-bottom: 20px;
+}
+
+#reset {
+  color: #55443a;
+  background: #FFF0E5;
+  border: 2px solid #55443a;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 20px;
 }
 /*# sourceMappingURL=style.css.map */

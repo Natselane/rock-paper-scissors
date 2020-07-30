@@ -3,37 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock-Paper-Scissors Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Rock Paper Scissors Game!</h1>
-    <h2>How to Play?</h2>
-    <ol>
-        <li>Select either Rock, Paper or Scissors</li>
-        <li>Wait for computer to choose</li>
-        <li>View your results</li>
-        <li>You need 3 points to win</li>
-    </ol>
-    <p>Good luck!</p>
-    <div class="choices">
-        <button id="rock">rock</button>
-        <button id="paper">paper</button>
-        <button id="scissors">scissors</button>
+    <div class="container">
+        <h1>Rock Paper Scissors Game!</h1>
+        <h2>How to Play?</h2>
+        <ol>
+            <li>Select either Rock, Paper or Scissors</li>
+            <li>Wait for computer to choose</li>
+            <li>View your results</li>
+            <li>You need 5 points to win</li>
+        </ol>
+        <p>Good luck!</p>
+        <div class="choices">
+            <button id="rock">rock</button>
+            <button id="paper">paper</button>
+            <button id="scissors">scissors</button>
+        </div>
+        
+        <div class="battlefield">
+            <div class="playerField"> <img src="" alt=""></div>
+            <div class="gamePlay">
+                <div>Round: <span id="round">-</span></div>
+                <div id="notice">Choose something!</div>
+                <div>Your points: <span id="playerPoints">0</span></div>
+                <div>Computer points: <span id="compPoints">0</span></div>
+                <div class="reset">
+                    <button id="reset">reset</button>
+                </div>
+            </div>
+            <div class="computerField"><img src="" alt=""></div>
+        </div>
+        
+        
     </div>
-    <div>
-        <button id="reset">reset</button>
-    </div>
-    <div class="battlefield">
-        <div class="playerField"> <img src="" alt=""></div>
-        <div class="computerField"><img src="" alt=""></div>
-    </div>
-    <p id="round"></p>
-    <p id="notice"></p>
-    <div>Your points: <span id="playerPoints">0</span></div>
-    
-    <div>Computer points: <span id="compPoints">0</span></div>
-
     <script src="app.js"></script>
 </body>
 </html>
