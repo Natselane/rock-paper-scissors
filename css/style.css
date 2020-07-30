@@ -102,6 +102,7 @@ body .container .points {
 .battlefield .playerField, .battlefield .computerField {
   text-align: center;
   width: 450px;
+  font-size: 70px;
   background-color: #55443a;
   border-radius: 20px;
 }
