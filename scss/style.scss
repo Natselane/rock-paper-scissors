@@ -87,24 +87,22 @@ body .container {
 
 .battlefield {
     width: 90%;
-    height: 290px;
-    border: 1px solid black;
+    height: 400px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     img {
         height: 100%;
         width: 100%;
+        border-radius: 20px;
     }
 
-    .playerField {
-        width: 380px;
-        background: red;
-    }
-
-    .computerField {
-        width: 380px;
-        background: blue;
+    .playerField, .computerField  {
+        text-align: center;
+        width: 450px;
+        font-size: 70px;
+        background-color: $highlight-color;
+        border-radius: 20px;
     }
 
     .gamePlay {
@@ -115,6 +113,12 @@ body .container {
 
         #notice {
             margin-bottom: 20px;
+            color: $red-color;
+            font-weight: 700;
+        }
+        
+        .points {
+            padding-bottom: 10px;
         }
     }
 }

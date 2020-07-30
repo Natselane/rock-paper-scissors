@@ -66,8 +66,10 @@ function resetPoints() {
     roundCount = 0;
     playerPoints.innerText = 0;
     compPoints.innerText = 0;
-    notice.innerText = "";
-    round.innerText = "";
+    notice.innerText = "Choose something!";
+    round.innerText = "-";
+    computerField.innerText = "Computer";
+    playerField.innerText = "Player";
     buttons.forEach(button => button.disabled = false);
 }
 
