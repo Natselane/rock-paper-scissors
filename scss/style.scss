@@ -100,7 +100,6 @@ body .container {
     .playerField, .computerField  {
         text-align: center;
         width: 450px;
-        font-size: 70px;
         background-color: $highlight-color;
         border-radius: 20px;
     }
@@ -113,12 +112,14 @@ body .container {
 
         #notice {
             margin-bottom: 20px;
+            font-size: 1.5em;
             color: $red-color;
             font-weight: 700;
         }
         
         .points {
             padding-bottom: 10px;
+            font-size: 20px;
         }
     }
 }
