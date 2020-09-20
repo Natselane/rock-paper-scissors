@@ -111,6 +111,7 @@ body .container .points {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 20%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
